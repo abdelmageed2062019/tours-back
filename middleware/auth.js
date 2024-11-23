@@ -1,0 +1,22 @@
+// middleware/auth.js
+const jwt = require("jsonwebtoken");
+
+const auth = (req, res, next) => {
+  const token = req.header("Authorization")?.replace("Bearer ", "");
+
+  if (!token) {
+    return res.status(401).send("Access denied. No token provided.");
+  }
+
+  try {
+    const verified = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(verified);
+
+    req.user = verified; // Attach user information to the request object
+    next();
+  } catch (error) {
+    res.status(400).send("Invalid token");
+  }
+};
+
+module.exports = auth;

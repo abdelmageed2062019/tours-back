@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Cairo Historical Tour",
+    "description": "Explore the history of Cairo, including visits to the Pyramids and the Sphinx.",
+    "image": "http://example.com/cairo.jpg",
+    "duration": "3 days",
+    "type": "Cultural",
+    "availability": "Available",
+    "pickupLocation": "Cairo Airport",
+    "languages": ["Arabic", "English"],
+    "prices": {
+      "privateTourWithLunch": {
+        "single": 100,
+        "twoPeople": 180,
+        "threeToFive": 250,
+        "aboveSix": 300,
+        "childSixToEleven": 50,
+        "childUnderSix": 0
+      },
+      "privateTourWithoutLunch": {
+        "single": 80,
+        "twoPeople": 150,
+        "threeToFive": 200,
+        "aboveSix": 250,
+        "childSixToEleven": 40,
+        "childUnderSix": 0
+      },
+      "privateTourGuide": {
+        "single": 50,
+        "twoPeople": 90,
+        "threeToFive": 120,
+        "aboveSix": 150,
+        "childSixToEleven": 30,
+        "childUnderSix": 0
+      },
+      "privateCarWithDriver": {
+        "group": 200,
+        "childSixToEleven": 50,
+        "childUnderSix": 0
+      }
+    },
+    "city": "Cairo"
+  },
+  {
+    "title": "Alexandria Sea Breeze Tour",
+    "description": "Discover the Mediterranean charm of Alexandria, from the Citadel to the Bibliotheca Alexandrina.",
+    "image": "http://example.com/alexandria.jpg",
+    "duration": "2 days",
+    "type": "Cultural",
+    "availability": "Available",
+    "pickupLocation": "Alexandria Airport",
+    "languages": ["Arabic", "English"],
+    "prices": {
+      "privateTourWithLunch": {
+        "single": 90,
+        "twoPeople": 160,
+        "threeToFive": 230,
+        "aboveSix": 280,
+        "childSixToEleven": 45,
+        "childUnderSix": 0
+      },
+      "privateTourWithoutLunch": {
+        "single": 70,
+        "twoPeople": 140,
+        "threeToFive": 190,
+        "aboveSix": 240,
+        "childSixToEleven": 35,
+        "childUnderSix": 0
+      },
+      "privateTourGuide": {
+        "single": 40,
+        "twoPeople": 80,
+        "threeToFive": 110,
+        "aboveSix": 140,
+        "childSixToEleven": 25,
+        "childUnderSix": 0
+      },
+      "privateCarWithDriver": {
+        "group": 180,
+        "childSixToEleven": 45,
+        "childUnderSix": 0
+      }
+    },
+    "city": "Alexandria"
+  },
+  {
+    "title": "Luxor Ancient Temples Tour",
+    "description": "Visit the grand temples of Luxor, including Karnak and Luxor Temple.",
+    "image": "http://example.com/luxor.jpg",
+    "duration": "4 days",
+    "type": "Historical",
+    "availability": "Available",
+    "pickupLocation": "Luxor Airport",
+    "languages": ["Arabic", "English", "French"],
+    "prices": {
+      "privateTourWithLunch": {
+        "single": 120,
+        "twoPeople": 220,
+        "threeToFive": 300,
+        "aboveSix": 360,
+        "childSixToEleven": 60,
+        "childUnderSix": 0
+      },
+      "privateTourWithoutLunch": {
+        "single": 100,
+        "twoPeople": 190,
+        "threeToFive": 270,
+        "aboveSix": 320,
+        "childSixToEleven": 50,
+        "childUnderSix": 0
+      },
+      "privateTourGuide": {
+        "single": 60,
+        "twoPeople": 110,
+        "threeToFive": 150,
+        "aboveSix": 180,
+        "childSixToEleven": 35,
+        "childUnderSix": 0
+      },
+      "privateCarWithDriver": {
+        "group": 220,
+        "childSixToEleven": 55,
+        "childUnderSix": 0
+      }
+    },
+    "city": "Luxor"
+  },
+  {
+    "title": "Aswan Nile Cruise",
+    "description": "Experience a serene Nile cruise in Aswan, visiting Philae Temple and more.",
+    "image": "http://example.com/aswan.jpg",
+    "duration": "5 days",
+    "type": "Adventure",
+    "availability": "Available",
+    "pickupLocation": "Aswan Airport",
+    "languages": ["Arabic", "English", "German"],
+    "prices": {
+      "privateTourWithLunch": {
+        "single": 150,
+        "twoPeople": 270,
+        "threeToFive": 350,
+        "aboveSix": 420,
+        "childSixToEleven": 75,
+        "childUnderSix": 0
+      },
+      "privateTourWithoutLunch": {
+        "single": 130,
+        "twoPeople": 240,
+        "threeToFive": 320,
+        "aboveSix": 370,
+        "childSixToEleven": 60,
+        "childUnderSix": 0
+      },
+      "privateTourGuide": {
+        "single": 70,
+        "twoPeople": 130,
+        "threeToFive": 170,
+        "aboveSix": 200,
+        "childSixToEleven": 40,
+        "childUnderSix": 0
+      },
+      "privateCarWithDriver": {
+        "group": 250,
+        "childSixToEleven": 65,
+        "childUnderSix": 0
+      }
+    },
+    "city": "Aswan"
+  },
+  {
+    "title": "Sharm El Sheikh Red Sea Adventure",
+    "description": "Dive into the crystal-clear waters of Sharm El Sheikh and explore its vibrant marine life.",
+    "image": "http://example.com/sharm.jpg",
+    "duration": "3 days",
+    "type": "Adventure",
+    "availability": "Available",
+    "pickupLocation": "Sharm El Sheikh Airport",
+    "languages": ["Arabic", "English", "Italian"],
+    "prices": {
+      "privateTourWithLunch": {
+        "single": 110,
+        "twoPeople": 200,
+        "threeToFive": 270,
+        "aboveSix": 320,
+        "childSixToEleven": 55,
+        "childUnderSix": 0
+      },
+      "privateTourWithoutLunch": {
+        "single": 90,
+        "twoPeople": 170,
+        "threeToFive": 240,
+        "aboveSix": 290,
+        "childSixToEleven": 45,
+        "childUnderSix": 0
+      },
+      "privateTourGuide": {
+        "single": 50,
+        "twoPeople": 100,
+        "threeToFive": 140,
+        "aboveSix": 170,
+        "childSixToEleven": 35,
+        "childUnderSix": 0
+      },
+      "privateCarWithDriver": {
+        "group": 200,
+        "childSixToEleven": 50,
+        "childUnderSix": 0
+      }
+    },
+    "city": "Sharm El Sheikh"
+  }
+]
