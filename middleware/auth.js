@@ -12,7 +12,7 @@ const auth = (req, res, next) => {
     const verified = jwt.verify(token, process.env.JWT_SECRET);
     console.log(verified);
 
-    req.user = verified; // Attach user information to the request object
+    req.user = verified;
     next();
   } catch (error) {
     res.status(400).send("Invalid token");

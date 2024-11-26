@@ -7,6 +7,7 @@ const userRoutes = require("./routes/user");
 const tourRoutes = require("./routes/tours");
 const packageRoutes = require("./routes/package");
 const bookingRoutes = require("./routes/booking");
+const reviewRoutes = require("./routes/review");
 const path = require("path");
 
 const cors = require("cors");
@@ -33,6 +34,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/tours", tourRoutes);
 app.use("/api/packages", packageRoutes);
 app.use("/api/bookings", bookingRoutes);
+app.use("/api/reviews", reviewRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.listen(process.env.PORT, () => {

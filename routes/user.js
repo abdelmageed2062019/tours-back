@@ -30,7 +30,7 @@ router.get("/:id", auth, admin, async (req, res) => {
 
 // Add a new user (admin only)
 router.post("/", auth, admin, async (req, res) => {
-  const { firstName, lastName, displayName, address, email, password } =
+  const { firstName, lastName, displayName, address, email, password, role } =
     req.body;
 
   // Validation check
@@ -57,6 +57,7 @@ router.post("/", auth, admin, async (req, res) => {
       address,
       email,
       password: hashedPassword,
+      role,
     });
 
     await user.save();
@@ -70,7 +71,7 @@ router.post("/", auth, admin, async (req, res) => {
 
 // Update an existing user by ID (admin only)
 router.put("/:id", auth, admin, async (req, res) => {
-  const { firstName, lastName, displayName, address, email, password } =
+  const { firstName, lastName, displayName, address, email, password, role } =
     req.body;
 
   try {
@@ -86,6 +87,7 @@ router.put("/:id", auth, admin, async (req, res) => {
     if (displayName) user.displayName = displayName;
     if (address) user.address = address;
     if (email) user.email = email;
+    if (role) user.role = role;
 
     if (password) {
       const salt = await bcrypt.genSalt(10);

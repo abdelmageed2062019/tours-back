@@ -20,6 +20,8 @@ router.post("/", auth, admin, upload.array("media", 10), async (req, res) => {
       city,
     } = req.body;
 
+    const parsedPrices = JSON.parse(prices);
+
     const media = req.files.map((file) => ({
       url: `${req.protocol}://${req.get("host")}/uploads/${file.filename}`,
       type: file.mimetype.startsWith("image") ? "image" : "video",
@@ -34,7 +36,7 @@ router.post("/", auth, admin, upload.array("media", 10), async (req, res) => {
       availability,
       pickupLocation,
       languages,
-      prices,
+      prices: parsedPrices,
       city,
       createdBy: req.user._id,
     });
@@ -53,6 +55,22 @@ router.get("/", async (req, res) => {
   try {
     const tours = await Tour.find().populate("createdBy", "username");
     res.json(tours);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Get a specific Tour by ID
+router.get("/:id", async (req, res) => {
+  try {
+    const tour = await Tour.findById(req.params.id).populate(
+      "createdBy",
+      "username"
+    );
+    if (!tour) {
+      return res.status(404).json({ message: "Tour not found" });
+    }
+    res.json(tour);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
