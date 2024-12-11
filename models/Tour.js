@@ -10,14 +10,18 @@ const mediaSchema = new mongoose.Schema({
 
 const tourSchema = new mongoose.Schema({
   title: { type: String, required: true },
+  duration: { type: String, required: true },
+  pickUpAndDropOff: { type: String, required: true },
+  details: { type: String, required: true },
+  fullDay: { type: String, required: true },
+  viewPrice: { type: String, required: true },
+  note: { type: String },
   description: { type: String, required: true },
   media: [mediaSchema],
   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   createdAt: { type: Date, default: Date.now },
-  duration: { type: String },
   type: { type: String },
   availability: { type: String },
-  pickupLocation: { type: String },
   languages: [String],
   prices: {
     privateTourWithLunch: {

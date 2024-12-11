@@ -16,9 +16,7 @@ const handleValidationErrors = (req, res) => {
 
 // Generate JWT Token
 const generateToken = (userId, role) => {
-  return jwt.sign({ userId, role }, process.env.JWT_SECRET, {
-    expiresIn: "3d",
-  });
+  return jwt.sign({ userId, role }, process.env.JWT_SECRET, {});
 };
 
 // Validation Rules

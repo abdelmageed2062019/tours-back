@@ -16,7 +16,7 @@ router.get("/", auth, admin, async (req, res) => {
 });
 
 // Get a specific user by ID (admin only)
-router.get("/:id", auth, admin, async (req, res) => {
+router.get("/:id", auth, async (req, res) => {
   try {
     const user = await User.findById(req.params.id).select("-password"); // Exclude password from the response
     if (!user) {

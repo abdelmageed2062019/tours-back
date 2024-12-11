@@ -1,4 +1,3 @@
-// models/User.js
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
@@ -11,4 +10,4 @@ const userSchema = new mongoose.Schema({
   role: { type: String, enum: ["user", "admin"] },
 });
 
-module.exports = mongoose.model("User ", userSchema);
+module.exports = mongoose.model("User", userSchema);
